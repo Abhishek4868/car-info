@@ -1,0 +1,57 @@
+body, html {
+  font-family: "Oswald", serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('https://i.pinimg.com/736x/22/ee/72/22ee72e04d05adfb2137273975222442.jpg');
+  background-size: cover;
+}
+
+.text-center{
+  color: #ffffff;
+}
+
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 items per row */
+  gap: 20px;
+  /* Space between items */
+}
+
+@media (max-width: 992px) {
+  .car-list {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .car-list {
+    grid-template-columns: 1fr;
+    /* 1 item per row on small screens */
+  }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
